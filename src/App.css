@@ -1,0 +1,334 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,203;1,203&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1390px;
+  }
+}
+.bg-purple {
+  background: #8e00a3;
+}
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+.headerWrapper .top-strip {
+  padding: 8px 0px;
+}
+.headerWrapper .top-strip p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+.headerWrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+.headerWrapper .header {
+  width: 100%;
+  height: auto;
+  padding: 25px 0px;
+}
+.logoWrapper img {
+  width: 60%;
+}
+.headerWrapper .header .part-2 .countryDrop {
+  width: 170px;
+  height: 50px;
+  min-width: 170px;
+  color: #000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px !important;
+  padding: 10px 10px;
+}
+.headerWrapper .header .part-2 .countryDrop {
+  text-align: left;
+  justify-content: flex-start !important ;
+}
+.headerWrapper .header .part-2 .countryDrop .label {
+  font-size: 12px !important;
+  text-transform: capitalize !important ;
+  color: rgba(0, 0, 0, 0.5) !important;
+  line-height: 16px;
+}
+.headerWrapper .header .part-2 .countryDrop .name {
+  font-size: 16px !important;
+  text-transform: capitalize !important ;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-weight: 700;
+  line-height: 16px;
+}
+.headerWrapper .header .part-2 .countryDrop span.ml-auto svg {
+  opacity: 0.7;
+}
+.locationModal .MuiPaper-elevation {
+  padding: 25px;
+  position: relative;
+}
+.locationModal .countryList {
+  margin-bottom: 0px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.locationModal .countryList li {
+  width: 100%;
+  list-style: none;
+}
+.locationModal .countryList li Button {
+  width: 100%;
+  text-transform: capitalize !important;
+  color: #000;
+  justify-content: flex-start;
+  padding: 12px 20px !important;
+}
+.locationModal .countryList li Button:hover {
+  background: #f1f1f1;
+}
+.locationModal .countryList li Button.active {
+  background: #ccc;
+}
+.locationModal .close_ {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.locationModal .close_ svg {
+  font-size: 22px;
+}
+.headerSearch {
+  width: 60%;
+  height: 60px;
+  background: #f3f4f7;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.headerSearch input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+.headerSearch input {
+  background: transparent !important ;
+  outline: none !important;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+  height: 35px;
+  width: 100%;
+  border: 0px !important ;
+  padding: 0px 20px !important;
+}
+.headerSearch button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 100;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px;
+  border-radius: 50% !important;
+  color: #000;
+}
+.headerSearch button svg {
+  font-size: 25px;
+  opacity: 0.8;
+}
+header .part3 .circle {
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  min-width: 45px !important ;
+  height: 45px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  color: #000;
+}
+header .part3 .circle svg {
+  font-size: 23px;
+}
+.cartTab .price {
+  font-weight: 700;
+  font-size: 18ox;
+  color: rgba(0, 0, 0, 0.8);
+}
+.cartTab button {
+  background: #fff1ee !important;
+}
+.cartTab button svg {
+  color: #ea2b0f;
+}
+.cartTab .count {
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  background-color: #ea2b0f;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+nav .navPart1 {
+  max-width: 20%;
+  flex: 0 0 20%;
+}
+nav .navPart1 .catWrapper {
+  position: relative;
+}
+nav .navPart1 .catWrapper .sideBar {
+  width: 100%;
+  height: 0px;
+  max-height: 400px;
+  background: #fff;
+  overflow-y: auto;
+  position: absolute;
+  top: 135%;
+  left: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 0px;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+nav .navPart1 .catWrapper .open {
+  height: 300px;
+  max-height: 400px;
+  opacity: 1;
+  visibility: inherit;
+}
+nav .navPart1 .catWrapper .sideBar li {
+  width: 100%;
+  list-style: none;
+  padding: 0px 15px;
+}
+nav .navPart1 .catWrapper .sideBar li Button {
+  color: #000;
+  width: 100%;
+  justify-content: flex-start;
+  text-transform: capitalize;
+}
+nav .navPart1 .catWrapper .sideBar li Button:hover {
+  background: transparent;
+}
+nav .navPart2 {
+  max-width: 80%;
+  flex: 0 0 80%;
+}
+nav .navPart2 ul li {
+  position: relative;
+}
+nav .navPart2 ul li .submenu {
+  position: absolute;
+  top: 150%;
+  left: 0px; /* Adjust as needed */
+  background: #fff;
+  min-width: 300px;
+  max-height: 250px;
+  opacity: 0;
+  visibility: hidden;
+  /* Limit maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border-radius: 10px;
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
+}
+nav .navPart2 ul li .submenu a {
+  display: block;
+  width: 100%;
+}
+nav .navPart2 ul li .submenu a Button {
+  font-size: 14px;
+  width: 100%;
+
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-radius: 0px;
+}
+nav .navPart2 ul li .submenu a Button:hover {
+  background: #f0faff;
+  color: #2bbef9;
+}
+nav .navPart2 ul li:hover .submenu {
+  opacity: 1;
+  visibility: inherit;
+  top: 100%;
+}
+nav .allCatTab {
+  background: #2bbef9;
+  padding: 10px 12px !important;
+  border-radius: 30px;
+}
+nav .allCatTab * {
+  color: #fff;
+}
+nav .allCatTab:hover {
+  background: #2bbef9;
+}
+nav .allCatTab .text {
+  font-weight: 600;
+}
+nav .allCatTab .icon1 svg {
+  font-size: 20px !important;
+}
+nav .allCatTab svg {
+  font-size: 15px !important;
+}
+nav .navPart2 ul {
+  margin-bottom: 0px;
+}
+nav .navPart2 ul li a {
+  text-decoration: none;
+}
+nav .navPart2 ul li a Button {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 8px 13px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+}
+nav .navPart2 ul li a:hover {
+  background: #f0faff;
+  color: #2bbef9;
+}
+nav .navPart2 ul li a svg {
+  font-size: 20px;
+}
+.homeBanner .item{
+  max-height: 600px;
+  height: 620px;
+}
